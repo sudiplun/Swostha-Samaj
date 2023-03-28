@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 import com.sudiplun.swosthaSamaj.databinding.ActivityMainBinding;
 
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         replaceFragment(new homeFragment());
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            switch (item.getItemId()){
+            switch (item.getItemId()) {
                 case R.id.home:
                     replaceFragment(new homeFragment());
                     break;
@@ -31,16 +32,18 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.setting:
                     replaceFragment(new settingsFragment());
                     break;
+                case R.id.search:
+                    replaceFragment(new searchFragment());
             }
             return true;
         });
     }
-    private void replaceFragment(Fragment fragment){
+
+    private void replaceFragment(Fragment fragment) {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frameLayout,fragment);
+        fragmentTransaction.replace(R.id.frameLayout, fragment);
         fragmentTransaction.commit();
     }
-
 }
