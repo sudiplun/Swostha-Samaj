@@ -5,6 +5,10 @@
         android:id="@+id/home"
         android:icon="@drawable/baseline_home_24"
         android:title="Home" />
+     <item
+        android:id="@+id/search"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Search"/>
     <item
         android:id="@+id/person"
         android:icon="@drawable/baseline_person_24"
@@ -13,8 +17,5 @@
         android:id="@+id/setting"
         android:icon="@drawable/baseline_settings_24"
         android:title="Settings"/>
-    <item
-        android:id="@+id/search"
-        android:icon="@drawable/baseline_search_24"
-        android:title="Search"/>
+
 </menu>
