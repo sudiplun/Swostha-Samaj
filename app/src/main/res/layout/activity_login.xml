@@ -27,17 +27,17 @@
 
 
             <TextView
-                android:id="@+id/signUpText"
+                android:id="@+id/txtLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SIGNUP"
+                android:text="LOGIN"
                 android:textAlignment="center"
                 android:textColor="@color/purple"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/signUpUserEmail"
+                android:id="@+id/loginUserEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
@@ -49,21 +49,9 @@
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
 
-            <EditText
-                android:id="@+id/signUpUserName"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_person_24"
-                android:drawablePadding="8dp"
-                android:hint="Username"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background" />
 
             <EditText
-                android:id="@+id/signUpPassword"
+                android:id="@+id/loginPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -76,27 +64,14 @@
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
 
-            <EditText
-                android:id="@+id/signUpRePassword"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_lock_24"
-                android:drawablePadding="8dp"
-                android:hint="Renter Password"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background" />
 
             <Button
-                android:id="@+id/signUpButton"
+                android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/purple"
-                android:text="signUp"
+                android:text="login"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
 
@@ -105,12 +80,12 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/readyAccount"
+        android:id="@+id/signupNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:padding="8dp"
-        android:text="Already have account?"
+        android:text="Not register yet. SignUp now"
         android:textAlignment="center"
         android:textColor="@color/purple"
         android:textSize="14sp" />
