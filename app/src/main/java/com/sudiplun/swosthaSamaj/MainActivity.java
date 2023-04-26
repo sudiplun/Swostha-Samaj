@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 import com.sudiplun.swosthaSamaj.databinding.ActivityMainBinding;
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new settingsFragment());
                     break;
                 case R.id.search:
-                    replaceFragment(new orderFragment());
+                    replaceFragment(new searchFragment());
             }
             return true;
         });
